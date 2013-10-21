@@ -9,17 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-def secure_token
-  token_file = Rails.root.join('.secret')
-  if File.exist?(token_file)
-    # Use the existing token.
-    File.read(token_file).chomp
-  else
-    # Generate a new token and store it in token_file.
-    token = SecureRandom.hex(64)
-    File.write(token_file, token)
-    token
-  end
-end
-
-HeartApp::Application.config.secret_key_base = secure_token
+HeartApp::Application.config.secret_key_base = 'd013f49966a1ebd2145f16fc312c27f6df88b2f023dbf873ca454512754b9942ef49c0bf7f0fa4c780b81780c15a0664164eb1286487685c55eee3992cc13b1c'
