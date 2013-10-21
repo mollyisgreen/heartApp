@@ -1,21 +1,23 @@
 development:
   adapter: postgresql
-  host: localhost
-  username: mollyyang
+  encoding: unicode
   database: heartapp_development
+  pool: 5
+  username: mollyyang
+  host: localhost
 
 test:
   adapter: postgresql
   encoding: unicode
   database: heartapp_test
   pool: 5
-  username: ukarrfycgjwwqj
-  password: 3_ojAge4DHt5Ve8pAW9hOKgthe
+  username: mollyyang
+  host: localhost
 
 production:
   adapter: postgresql
   encoding: unicode
   database: heartapp_production
   pool: 5
-  username: ukarrfycgjwwqj
-  password: 3_ojAge4DHt5Ve8pAW9hOKgthe
+  username: mollyyang
+  host: localhost
