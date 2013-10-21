@@ -20,4 +20,3 @@ production:
   database: heartapp_production
   pool: 5
   username: mollyyang
-  host: localhost
